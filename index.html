@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journey</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: #e6e6e6;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, serif;
+      overflow: hidden;
+    }
+
+    .text {
+      text-align: center;
+      opacity: 0;
+      animation: appear 4s forwards;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-weight: normal;
+    }
+
+    p {
+      color: #777;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        filter: blur(10px);
+      }
+      to {
+        opacity: 1;
+        filter: blur(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="text">
+    <h1>¿Por qué hice esto?</h1>
+    <p>03:13</p>
+  </div>
+</body>
+</html>
